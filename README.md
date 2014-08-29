@@ -1,6 +1,6 @@
 Docker files for Disco
 ----------------------
-Based on github.com/gijzelaerr/discodocker
+Based on https://github.com/gijzelaerr/discodocker
 
 The idea is to use https://github.com/phusion/baseimage-docker rather
 than ubuntu and supervisord to launch disco.
