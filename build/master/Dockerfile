@@ -3,6 +3,9 @@ FROM discophusion/discobase
 # requirements for proxy
 RUN apt-get install -y python-pycurl lighttpd
 
+# install disco as master
+RUN cd /disco && make install prefix=/usr/local
+
 # needed for running disco services
 RUN mkdir /etc/service/disco
 # don't forget to verify disco.sh is executable
