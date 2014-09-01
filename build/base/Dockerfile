@@ -42,5 +42,8 @@ RUN cd /disco && make install prefix=/usr/local
 
 RUN chown -R disco /usr/local/var/disco
 
+# to debug dns ...
+RUN apt-get install -y dnsutils
+
 VOLUME ["/D", "/L"]
 

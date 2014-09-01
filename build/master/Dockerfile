@@ -10,6 +10,7 @@ RUN cd /disco && make install prefix=/usr/local
 RUN mkdir /etc/service/disco
 # don't forget to verify disco.sh is executable
 ADD disco.sh /etc/service/disco/run
+RUN chmod a+x /etc/service/disco/run
 
 ADD disco-settings.py /etc/disco/settings.py
 
